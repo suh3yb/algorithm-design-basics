@@ -1,0 +1,15 @@
+/Users/suheybcoskun/Projects/Personal/algorithm-design/bin/Debug/net6.0/algorithm-design
+/Users/suheybcoskun/Projects/Personal/algorithm-design/bin/Debug/net6.0/algorithm-design.deps.json
+/Users/suheybcoskun/Projects/Personal/algorithm-design/bin/Debug/net6.0/algorithm-design.runtimeconfig.json
+/Users/suheybcoskun/Projects/Personal/algorithm-design/bin/Debug/net6.0/algorithm-design.dll
+/Users/suheybcoskun/Projects/Personal/algorithm-design/bin/Debug/net6.0/algorithm-design.pdb
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.csproj.AssemblyReference.cache
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.GeneratedMSBuildEditorConfig.editorconfig
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.AssemblyInfoInputs.cache
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.AssemblyInfo.cs
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.csproj.CoreCompileInputs.cache
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.dll
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/refint/algorithm-design.dll
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.pdb
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/algorithm-design.genruntimeconfig.cache
+/Users/suheybcoskun/Projects/Personal/algorithm-design/obj/Debug/net6.0/ref/algorithm-design.dll
