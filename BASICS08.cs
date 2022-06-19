@@ -1,5 +1,6 @@
 namespace BASICS
 {
+  // Switch - Case
   public static class BASICS08
   {
     public enum Colors { Red, Green, Blue };

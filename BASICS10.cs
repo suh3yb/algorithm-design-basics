@@ -18,6 +18,10 @@ namespace BASICS
       Console.WriteLine("The sum of the digits of {0} is {1}", n, Number.SumOfDigits(n));
       Console.WriteLine("The sum of the numbers from 0 to {0} = {1}", n, Number.SumOfNumbersUntilN(n));
       Console.WriteLine("The sum of the numbers from 0 to {0} (using formula) = {1}", n, Number.SumOfNumbersUntilNUsingFormula(n));
+      Console.WriteLine("The sum of odd numbers from 0 to {0} = {1}", n, Number.SumOfOddNumbersUntilN(n));
+      Console.WriteLine("The sum of odd numbers from 0 to {0} (alternative) = {1}", n, Number.SumOfOddNumbersUntilNAlternativeSolution(n));
+      Console.WriteLine("The sum of odd numbers from 0 to {0} (alternative) = {1}", n, Number.SumOfOddNumbersUntilNUsingFormula(n));
+      Console.WriteLine("The sum of even numbers from 0 to {0} (alternative) = {1}", n, Number.SumOfEvenNumbersUntilNUsingFormula(n));
     }
 
     public class Number
@@ -97,17 +101,64 @@ namespace BASICS
         return sum;
       }
 
+      // Sum of Numbers Until (including) n
+      // First solution
+      // expensive calculation
       public static int SumOfNumbersUntilN(int n)
       {
-        int total = 0;
-        for (int i = 0; i <= n; i++)
-          total += i;
-        return total;
+        int sum = 0;
+        for (int i = 1; i <= n; i++)
+          sum += i;
+        return sum;
       }
 
+      // Second (better) solution
       public static int SumOfNumbersUntilNUsingFormula(int n)
       {
         return (n * (n + 1)) / 2;
+      }
+
+      // Sum of Odd Numbers Until (including) n
+      // First solution
+      // expensive calculation
+      public static int SumOfOddNumbersUntilN(int n)
+      {
+        int sum = 0;
+        for (int i = 1; i <= n; i++)
+          {
+            if (i % 2 == 1)
+            sum += i;
+          }
+        return sum;
+      }
+
+      // Second (better) solution
+      // still expensive calculation
+      public static int SumOfOddNumbersUntilNAlternativeSolution(int n)
+      {
+        int sum = 0;
+        for (int i = 1; i <= n; i += 2)
+            sum += i;
+        return sum;
+      }
+
+
+      // Third (best) solution using formula
+      public static int SumOfOddNumbersUntilNUsingFormula(int n)
+      {
+        // Formula:
+        // 1 + 3 + 5 + ... + n = 2n + 1
+        n = (n + 1) / 2; // find n
+        return n * n;
+      }
+      
+      // Sum of Even Numbers Until (including) n
+      public static int SumOfEvenNumbersUntilNUsingFormula(int n)
+      {
+        // Formula:
+        // 2 + 4 + 6 + ... + 2n = n * (n + 1);
+        n = n / 2; // find n
+        return n * (n + 1);
       }
     }
   }

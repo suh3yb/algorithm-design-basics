@@ -16,7 +16,12 @@ namespace BASICS // Note: actual namespace depends on the project name.
       // BASICS07.MainCode();
       // BASICS08.MainCode();
       // BASICS09.MainCode();
-      BASICS10.MainCode();
+      // BASICS10.MainCode();
+      // BASICS11.MainCode();
+      // BASICS12.CalculateCircumferenceOfCircle();
+      // BASICS13.MainCode();
+      // BASICS14.MainCode();
+      BASICS15.MainCode();
     }
   }
 }
