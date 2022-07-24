@@ -12,6 +12,7 @@ namespace BASICS
       var y = "2";
       Console.WriteLine(x + y);
 
+      // this equals to 33000000
       int i = 33_000_000;
       Console.WriteLine(i);
 

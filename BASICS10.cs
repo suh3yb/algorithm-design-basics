@@ -76,14 +76,14 @@ namespace BASICS
           return false;
         }
 
-        bool kontrol = true;
+        bool isPrime = true;
         for (int i = 2; i < n; i++)
           if (n % i == 0)
           {
-            kontrol = false;
+            isPrime = false;
             break;
           }
-        return kontrol;
+        return isPrime;
       }
 
       /// <summary>
@@ -92,6 +92,7 @@ namespace BASICS
       public static int SumOfDigits(int n)
       {
         int sum = 0, digit = 0;
+        n = AbsoluteValue(n);
         while (n > 0)
         {
           digit = n % 10;
@@ -104,6 +105,7 @@ namespace BASICS
       // Sum of Numbers Until (including) n
       // First solution
       // expensive calculation
+      // bug: doesn't work with negative numbers
       public static int SumOfNumbersUntilN(int n)
       {
         int sum = 0;
@@ -113,6 +115,7 @@ namespace BASICS
       }
 
       // Second (better) solution
+      // works with negative numbers
       public static int SumOfNumbersUntilNUsingFormula(int n)
       {
         return (n * (n + 1)) / 2;
@@ -121,29 +124,32 @@ namespace BASICS
       // Sum of Odd Numbers Until (including) n
       // First solution
       // expensive calculation
+      // bug: doesn't work with negative numbers
       public static int SumOfOddNumbersUntilN(int n)
       {
         int sum = 0;
         for (int i = 1; i <= n; i++)
-          {
-            if (i % 2 == 1)
+        {
+          if (i % 2 == 1)
             sum += i;
-          }
+        }
         return sum;
       }
 
       // Second (better) solution
       // still expensive calculation
+      // bug: doesn't work with negative numbers
       public static int SumOfOddNumbersUntilNAlternativeSolution(int n)
       {
         int sum = 0;
         for (int i = 1; i <= n; i += 2)
-            sum += i;
+          sum += i;
         return sum;
       }
 
 
       // Third (best) solution using formula
+      // works with negative numbers
       public static int SumOfOddNumbersUntilNUsingFormula(int n)
       {
         // Formula:
@@ -151,7 +157,7 @@ namespace BASICS
         n = (n + 1) / 2; // find n
         return n * n;
       }
-      
+
       // Sum of Even Numbers Until (including) n
       public static int SumOfEvenNumbersUntilNUsingFormula(int n)
       {

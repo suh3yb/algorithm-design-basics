@@ -14,13 +14,13 @@ namespace BASICS // Note: actual namespace depends on the project name.
     public static void CalculateCircleArea()
     {
       const double pi = 3.1428;
-      Double alan, r;
+      Double area, r;
 
       Console.WriteLine("r =");
       r = Convert.ToDouble(Console.ReadLine());
 
-      alan = pi * r * r;
-      Console.WriteLine("Area for r={0} is {1}", r, alan);
+      area = pi * r * r;
+      Console.WriteLine("Area for r={0} is {1}", r, area);
       Console.Read();
     }
 

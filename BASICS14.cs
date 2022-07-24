@@ -11,7 +11,7 @@ namespace BASICS
       int[] numbers = new Array().Create(length);
 
       Console.WriteLine("\n\nBiggest number: {0}", Array.FindBiggest(numbers));
-      Console.WriteLine("\nBiggest number: {0}", Array.FindSmallest(numbers));
+      Console.WriteLine("\nSmallest number: {0}", Array.FindSmallest(numbers));
       Console.WriteLine("\nArithmetic mean: {0:F2}", Array.CalculateArithmeticMean(numbers));
       Console.WriteLine("\nStandard Deviation: {0:F2}", Array.CalculateStandardDeviation(numbers));
 
@@ -29,7 +29,7 @@ namespace BASICS
   public class Array
   {
     /// <summary>
-    /// Creates one dimensional arrays
+    /// Creates one dimensional arrays of random numbers
     /// </summary>
     /// <param name="length">Length of array</param>
     /// <returns>Array of random numbers with provided length</returns>
