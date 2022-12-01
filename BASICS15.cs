@@ -1,6 +1,5 @@
 namespace BASICS
 {
-
   // Char
   public class BASICS15
   {
